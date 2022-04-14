@@ -22,7 +22,7 @@ var tasks = [
     {
         type: "option_choice",
         self_answer: undefined,
-        answer_id: "t1-oG",
+        answer_id: "t3-oG",
         input_name: "in1"
 
     },
@@ -46,75 +46,31 @@ var tasks = [
 
     },
     {
-        type: "fill_fields",
-        input_name: "in2",
-        fields: [
-            {
-                answer_id: "t2-o1",
-                self_answer: undefined,
-                answer: "26"
-            },
-            {
-                answer_id: "t2-o2",
-                self_answer: undefined,
-                answer: "42"
-            },
-            {
-                answer_id: "t2-o3",
-                self_answer: undefined,
-                answer: "50"
-            }
-        ]
-    },
-    {
-        type: "pair",
-        input_name: "in3",
-        active_elem: undefined,
-        fields: [
-            {
-                pair_id: "t3-i1",
-                self_answer: undefined,
-                answer_id: "t3-d3"
-            },
-            {
-                pair_id: "t3-i2",
-                self_answer: undefined,
-                answer_id: "t3-d1"
-            },
-            {
-                pair_id: "t3-i3",
-                self_answer: undefined,
-                answer_id: "t3-d2"
-            }
-        ]
-    },
-    {
-        type: "check_fields",
-        input_name: "in4",
-        fields: [
-            {
-                value: undefined,
-                answer: ["53"],
-                answer_id: "t4-o1"
-            },
-            {
-                value: undefined,
-                answer: ["50", "3"],
-                answer_id: "t4-o2"
-            },
-            {
-                value: undefined,
-                answer: ["50", "3"],
-                answer_id: "t4-o3"
-            }
-
-        ]
+        type: "option_choice",
+        self_answer: undefined,
+        answer_id: "t1-oG",
+        input_name: "in1"
 
     },
 ]
-window.addEventListener('load', function() {
-    pair("task_1_3")
-});
+
+
+
+
+
+
+
+
+
+
+
+
+//global js___________________________________________________________________________________________
+
+
+// window.addEventListener('load', function() {
+//     pair("task_1_3")
+// });
 
 
 var error_message = [
@@ -143,8 +99,6 @@ var error_message = [
         message: "Заполните все поля"
     },
 ]
-
-//global js_______________________________
 
 var slideIndex = 1
 var timer = 0
@@ -211,45 +165,45 @@ function Task() {
             }
             return true
 
-        case "fill_fields":
-            for (i = 0; i < task.fields.length; i++) {
-                if (task.fields[i].self_answer === undefined) {
-                    return false
-                }
-                if (task.fields[i].answer == task.fields[i].self_answer) {
-                    document.getElementById(task.fields[i].answer_id).className = "field__input aright"
-                } else {
-                    document.getElementById(task.fields[i].answer_id).className = "field__input wrong"
-                }
-            }
-            return true
-        case "pair":
-            for (i = 0; i < task.fields.length; i++) {
-                if (task.fields[i].self_answer === undefined) {
-                    return false
-                }
-                const elem = document.querySelector("svg.pair__svg").childNodes[i]
-                if (task.fields[i].answer_id == task.fields[i].self_answer) {
-                    elem.setAttribute("stroke", "green")
-                } else {
-                    elem.setAttribute("stroke", "red")
-                }
-            }
-            return true
-        case "check_fields":
-            for (i = 0; i < task.fields.length; i++) {
-                if (!task.fields[i].value) {
-                    document.getElementById(task.fields[i].answer_id).className = "field__input"
-                    return false
-                }
-                if (task.fields[i].answer.indexOf(task.fields[i].value) !== -1) {
-                    document.getElementById(task.fields[i].answer_id).className = "field__input aright"
-                } else {
-                    document.getElementById(task.fields[i].answer_id).className = "field__input wrong"
-                }
+        // case "fill_fields":
+        //     for (i = 0; i < task.fields.length; i++) {
+        //         if (task.fields[i].self_answer === undefined) {
+        //             return false
+        //         }
+        //         if (task.fields[i].answer == task.fields[i].self_answer) {
+        //             document.getElementById(task.fields[i].answer_id).className = "field__input aright"
+        //         } else {
+        //             document.getElementById(task.fields[i].answer_id).className = "field__input wrong"
+        //         }
+        //     }
+        //     return true
+        // case "pair":
+        //     for (i = 0; i < task.fields.length; i++) {
+        //         if (task.fields[i].self_answer === undefined) {
+        //             return false
+        //         }
+        //         const elem = document.querySelector("svg.pair__svg").childNodes[i]
+        //         if (task.fields[i].answer_id == task.fields[i].self_answer) {
+        //             elem.setAttribute("stroke", "green")
+        //         } else {
+        //             elem.setAttribute("stroke", "red")
+        //         }
+        //     }
+        //     return true
+        // case "check_fields":
+        //     for (i = 0; i < task.fields.length; i++) {
+        //         if (!task.fields[i].value) {
+        //             document.getElementById(task.fields[i].answer_id).className = "field__input"
+        //             return false
+        //         }
+        //         if (task.fields[i].answer.indexOf(task.fields[i].value) !== -1) {
+        //             document.getElementById(task.fields[i].answer_id).className = "field__input aright"
+        //         } else {
+        //             document.getElementById(task.fields[i].answer_id).className = "field__input wrong"
+        //         }
 
-            }
-            return true
+        //     }
+        //     return true
 
         case "select_fields":
             for (i = 0; i < task.fields.length; i++) {
@@ -287,11 +241,11 @@ function selectTask(event) {
 
             }
             break;
-        case "check_fields":
-            for (var i = 0; i < task.fields.length; i++) {
-                task.fields[i].value = document.getElementById(task.fields[i].answer_id).value
-            }
-            break
+        // case "check_fields":
+        //     for (var i = 0; i < task.fields.length; i++) {
+        //         task.fields[i].value = document.getElementById(task.fields[i].answer_id).value
+        //     }
+        //     break
         case "select_fields":
             for (var i = 0; i < task.fields.length; i++) {
                 task.fields[i].value = document.getElementById(task.fields[i].answer_id).value
@@ -359,50 +313,50 @@ function normalize_pair() {
 
 }
 
-function pair(task_id) {
+// function pair(task_id) {
     
-    normalize_pair()
-    document.getElementById(task_id).querySelector(".answers").ondragstart = function () {
-        return false;
-    };
-    window.addEventListener("resize", function () {
-        normalize_pair()
-    })
-    document.getElementById(task_id).querySelector(".answers").addEventListener("click", function (event) {
-        const task = tasks[slideIndex - 1]
-        event.preventDefault()
-        if (event.target.localName == "input") {
-            for (var i = 0; i < task.fields.length; i++) {
-                if (task.fields[i].pair_id == event.target.id) {
-                    task.active_elem = event.target.id
-                }
-            }
-        }
+//     normalize_pair()
+//     document.getElementById(task_id).querySelector(".answers").ondragstart = function () {
+//         return false;
+//     };
+//     window.addEventListener("resize", function () {
+//         normalize_pair()
+//     })
+//     document.getElementById(task_id).querySelector(".answers").addEventListener("click", function (event) {
+//         const task = tasks[slideIndex - 1]
+//         event.preventDefault()
+//         if (event.target.localName == "input") {
+//             for (var i = 0; i < task.fields.length; i++) {
+//                 if (task.fields[i].pair_id == event.target.id) {
+//                     task.active_elem = event.target.id
+//                 }
+//             }
+//         }
 
-        else {
-            if (event.target.localName == "img") {
+//         else {
+//             if (event.target.localName == "img") {
                 
-                for (var i = 0; i < task.fields.length; i++) {
+//                 for (var i = 0; i < task.fields.length; i++) {
                     
                    
                     
-                    if (task.fields[i].pair_id == task.active_elem) {
-                        task.fields[i].self_answer = event.target.parentElement.id
-                        const line = document.querySelector(".pair__svg").childNodes[i]
-                        const active_elem = document.getElementById(task.active_elem)
-                        line.setAttribute("y1", active_elem.parentElement.parentElement.offsetTop + active_elem.offsetHeight / 2 )
-                        line.setAttribute("x2", line.parentElement.clientWidth - 4)
-                        line.setAttribute("y2", event.target.parentElement.parentElement.offsetTop + event.target.offsetHeight / 2 )
-                        task.active_elem = undefined
-                    }
-                }
+//                     if (task.fields[i].pair_id == task.active_elem) {
+//                         task.fields[i].self_answer = event.target.parentElement.id
+//                         const line = document.querySelector(".pair__svg").childNodes[i]
+//                         const active_elem = document.getElementById(task.active_elem)
+//                         line.setAttribute("y1", active_elem.parentElement.parentElement.offsetTop + active_elem.offsetHeight / 2 )
+//                         line.setAttribute("x2", line.parentElement.clientWidth - 4)
+//                         line.setAttribute("y2", event.target.parentElement.parentElement.offsetTop + event.target.offsetHeight / 2 )
+//                         task.active_elem = undefined
+//                     }
+//                 }
 
 
-            }
-        }
-    })
+//             }
+//         }
+//     })
 
-}
+// }
 
 function result() {
     document.getElementById("wrapper_task").style.display = "none"
