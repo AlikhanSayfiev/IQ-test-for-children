@@ -7,6 +7,19 @@ var tasks = [
 
     },
     {
+        type: "select_fields",
+        input_name: "in5",
+        fields: [
+            {
+                value: undefined,
+                select: ["1 дм 9 см", "1 дм 8 см", "1 дм 7 см", "1 дм 6 см"],
+                answer: "1 дм 7 см",
+                answer_id: "t5-o1"
+            },
+        ]
+
+    },
+    {
         type: "fill_fields",
         input_name: "in2",
         fields: [
@@ -72,32 +85,6 @@ var tasks = [
         ]
 
     },
-    {
-        type: "select_fields",
-        input_name: "in5",
-        fields: [
-            {
-                value: undefined,
-                select: ["=", ">", "<"],
-                answer: "<",
-                answer_id: "t5-o1"
-            },
-            {
-                value: undefined,
-                select: ["=", ">", "<"],
-                answer: ">",
-                answer_id: "t5-o2"
-            },
-            {
-                value: undefined,
-                select: ["=", ">", "<"],
-                answer: ">",
-                answer_id: "t5-o3"
-            }
-
-        ]
-
-    }
 ]
 window.addEventListener('load', function() {
     pair("task_1_3")
