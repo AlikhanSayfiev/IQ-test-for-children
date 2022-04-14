@@ -1,241 +1,254 @@
 <!DOCTYPE html>
 <html lang="ru" class="no-js">
-    <!-- BEGIN HEAD -->
-    <head>
-        <meta charset="utf-8"/>
-        <title>Раздел 1 B</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  
-		<meta name="viewport" content="width=1280, initial-scale=0, maximum-scale=5.0, user-scalable=1" />
-        <meta content="" name="description"/>
-        <meta content="" name="author"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <!-- GLOBAL MANDATORY STYLES -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
-        
+<!-- BEGIN HEAD -->
 
-        <!-- PAGE LEVEL PLUGIN STYLES -->
-    
-
-        <!-- THEME STYLES -->
-        <link href="css/style.css" rel="stylesheet" type="text/css"/>
-
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="favicon.ico"/>
-    </head>
-    <!-- END HEAD -->
-
-    <!-- BODY -->
-    <body>
-
-       <div class="main">
-           <div class="container">
-            <div class="row">
-                <div class="col-xl"></div>
-                <div class="col-xl-6">
-                    <ul type="none" class="task-manager">
-                        <!-- Task 1 -->
-                        <li class="task-1 pt-5"> 
-                            <div class="body-test">
-                                <div class="body-test-head pb-3">
-                                    <div class="body-test-head-task">
-                                        Задание 1. 
-                                    </div>
-                                    <div class="body-test-head-condition">
-                                        Определи  верный  алгоритм нахождения разности 15 и 8.
-                                    </div>
-                                </div>
-                                <div class="body-test-body">
-                                    <div class="d-grid gap-3">
-                                      <button type="button" class="btn optionbutton btn-block t1-o1">15 – 7 – 1</button>
-                                      <button type="button" class="btn optionbutton btn-block t1-o3">15 – 6 – 2</button> 
-                                      <button type="button" class="btn optionbutton btn-block t1-oG">15 – 5 – 3</button>
-                                      <button type="button" class="btn optionbutton btn-block t1-o4">15 – 4 – 4</button>
-                                    </div>
-                                </div>
-                                <div class="bottom-buttons row pt-4">
-                                    <!--<button type="button" class="btn btn-block col back-button back-button1"><a  href="../../index.html">Назад</a></button>-->
-                                    <div class="col"></div>
-                                    <button type="button"  class="btn btn-block col check-button check-button1">Проверить</button>
-                                    <div class="col"></div>
-                                    <button type="button"  class="btn btn-block col next-button next-button1">Вперед</button>
-
-                                </div>
-                            </div>
-                        </li>
-                        <!-- Task 2 -->
-                        <li style="display: none;" class="task-2 pt-5">
-                            <div class="body-test">
-                                <div class="body-test-head pb-3">
-                                    <div class="body-test-head-task">
-                                        Задание 2. 
-                                    </div>
-                                    <div class="body-test-head-condition">
-                                        Вычисли:  9 см + 8 см =
-                                    </div>
-                                </div>
-                                <div class="body-test-body">
-                                    <div class="d-grid gap-3">
-                                      <button type="button" class="btn optionbutton btn-block t2-o1">1 дм 9 см</button>
-                                      <button type="button" class="btn optionbutton btn-block t2-o3">1 дм 8 см</button> 
-                                      <button type="button" class="btn optionbutton btn-block t2-oG">1 дм 7 см</button>
-                                      <button type="button" class="btn optionbutton btn-block t2-o4">1 дм 6 см</button>
-                                    </div>
-                                </div>
-                                <div class="bottom-buttons row pt-4">
-                                    <button type="button" class="btn btn-block col back-button back-button2">Назад</button>
-                                    <div class="col"></div>
-                                    <button type="button"  class="btn btn-block col check-button check-button2">Проверить</button>
-                                    <div class="col"></div>
-                                    <button type="button"  class="btn btn-block col next-button next-button2">Вперед</button>
-
-                                </div>
-                            </div>
-                        </li>
-                        <!-- Task 3 -->
-                        <li style="display: none;" class="task-3 pt-5"> 
-                            <div class="body-test">
-                                <div class="body-test-head pb-3">
-                                    <div class="body-test-head-task">
-                                        Задание 3. 
-                                    </div>
-                                    <div class="body-test-head-condition">
-                                        Определи рациональный способ вычислений.
-                                    </div>
-                                </div>
-                                <div class="body-test-body">
-                                    <div class="d-grid gap-3 drag-3">
-                                        <div class="row">
-                                        <div class="col-xs-3"><button type="button" class="btn optionbutton btn-block t3-o1" disabled>26 + 15 +  4 =</button></div>
-                                        <div class="col-xs-3 t3-o2"></div>
-                                        </div>
-                                        <div class="col"></div>
-                                        <div class="row">
-                                        <div class="col-xs-3 btn optionbutton btn-block t3-o3" id="t3-o3">(26 + 15) + 4 = 45</div>
-                                        <div class="col-xs-3 btn optionbutton btn-block t3-oG" id="t3-oG">(26 + 4) + 15 = 45</div>
-                                        <div class="col-xs-3 btn optionbutton btn-block t3-o4" id="t3-o4">(26 + 10) + 9 = 45</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="bottom-buttons row pt-4">
-                                    <button type="button" class="btn btn-block col back-button back-button3">Назад</button>
-                                    <div class="col"></div>
-                                    <button type="button"  class="btn btn-block col check-button check-button3">Проверить</button>
-                                    <div class="col"></div>
-                                    <button type="button"  class="btn btn-block col next-button next-button3">Вперед</button>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- Task 4 -->
-                        <li style="display: none;" class="task-4 pt-5"> 
-                            <div class="body-test">
-                                <div class="body-test-head pb-3">
-                                    <div class="body-test-head-task">
-                                        Задание 4. 
-                                    </div>
-                                    <div class="body-test-head-condition">
-                                        По выражению 13 + (13 – 7) составили задачу. <br>Установи пропущенные в задаче слова.<br> 
-                                        
-                                    </div>
-                                </div>
-                                <div class="body-test-body">
-                                    <div class="pt-2">В понедельник Аида прочитала  13  страниц книги, а во вторник — на 7 страниц 						<select class="t4-o1">
-            <option value=">">Больше</option>
-            <option value="<">Меньше</option>
+<head>
+    <meta charset="utf-8" />
+    <title>Раздел 1 А</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1280, initial-scale=0, maximum-scale=5.0, user-scalable=1" />
+    <!-- <style>
+    select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+        width:30px;
+}
+    </style> -->
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- GLOBAL MANDATORY STYLES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
 
 
-        </select>.
-									Сколько страниц прочитала Аида  
-			<select class="t4-o2">
-            <option value=">">во вторник</option>
-            <option value="<">за 2 дня</option>
+    <!-- PAGE LEVEL PLUGIN STYLES -->
 
 
-        </select> ?</div>
-                                    
-										         
-                                       
-                                </div>
-                                <div class="bottom-buttons row pt-4">
-                                    <button type="button" class="btn btn-block col back-button back-button4">Назад</button>
-                                    <div class="col"></div>
-                                    <button type="button"  class="btn btn-block col check-button check-button4">Проверить</button>
-                                    <div class="col"></div>
-                                    <button type="button"  class="btn btn-block col next-button next-button4">Вперед</button>
-                                    
-                                </div>
-                            </div>
-                        </li>
-                        <!-- Task 5 -->
-                        <li style="display: none;" class="task-5 pt-5"> 
-                            <div class="body-test">
-                                <div class="body-test-head pb-3">
-                                    <div class="body-test-head-task">
-                                        Задание 5.
-                                    </div>
-                                    <div class="body-test-head-condition">
-                                        Подбери выражение, которое соответствует решению задачи.<br><br>Айша шла в библиотеку  20 минут. На дорогу домой она потратила на 5 минут больше. Сколько времени занял весь путь Айши в библиотеку и домой?
-                                    </div>
-                                </div>
-                                <div class="body-test-body">
-                                    <div class="d-grid gap-3">
-                                      <button type="button" class="btn optionbutton btn-block t5-o1">20 + 5 = 25 (мин.)</button>
-                                      <button type="button" class="btn optionbutton btn-block t5-oG">20 + (20 + 5) = 45 (мин.)</button> 
-                                      <button type="button" class="btn optionbutton btn-block t5-o3">20 + (20 - 5) = 35 (мин.)</button>
-                                      
-                                    </div>
-                                </div>
-                                <div class="bottom-buttons row pt-4">
-                                    <button type="button" class="btn btn-block col back-button5 back-button5">Назад</button>
-                                    <div class="col"></div>
-									 <button type="button"  class="btn btn-block col check-button check-button5">Проверить</button>
-                                    <div class="col"></div>
-                                    <button type="button"  class="btn btn-block col next-button next-button5">Вперед</button>
+    <!-- THEME STYLES -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../../css/newStyle/style.css" rel="stylesheet" type="text/css" />
+    <link href="../../css/newStyle/part.css" rel="stylesheet" type="text/css" />
 
-                                </div>
-                            </div>
-                        </li>
-                         <li style="display: none;" class="task-6 pt-5"> 
-                            <div class="body-test">
-                                <div class="body-test-head pb-3">
-                                    <div class="body-test-head-task p-5">
-                                        Ваш результат за раздел
-                                    </div>
-                                    <div class="body-test-head-condition">
-                                        
-                                    </div>
-                                </div>
-                                <div class="body-test-body">
-                                   <div class="successed">Количество правильных:<span class="plusScore"></span></div>
-									<div class="successed">Что бы лучше проверить себя используй кнопку "Проверить"</div>
-                                   <!--<div class="unsuccessed">Количество неправильных:<span class="minusScore"></span></div>-->
-                                </div>
-                                <div class="bottom-buttons row pt-4">
-                                    <!--<button type="button" class="btn btn-block col back-button back-button6">Назад</button>-->
-                                    <div class="col"></div>
-                                    <a  href="part2.html"  class="btn btn-block col check-button check-button6">Начать тест заново</a>
-                                    <div class="col"></div>
-                                  <!--  <a  href="part3.html"  class="btn btn-block col next-button next-button6">Вперед</a>-->
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" />
+</head>
+<!-- END HEAD -->
 
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-xl"></div>
+<!-- BODY -->
+<body>
+    <header class="part">
+        <div class="logo">
+            <img src="../../assert/logo.png" alt="" srcset="">
+        </div>
+        <div class="title">
+            <h1><b>Раздел 2.</b> Действия с числами. Задачи</h1>
+
+        </div>
+    </header>
+    <main>
+        <section id="wrapper_task">
+            <div id="maskot">
+                <img src="../../assert/images/eraser_6.png" id="part-1-1">
+                <img src="../../assert/images/triangle_6.png" id="part-1-2">
+                <img src="../../assert/images/compass_boy_4.png" id="part-1-3">
+                <img src="../../assert/images/eraser_5.png" id="part-1-4">
+                <img src="../../assert/images/triangle_1.png" id="part-1-5">
             </div>
-           </div>
-       </div>
+            <div class="tab_part">
+                <span>Раздел 2</span>
+            </div>
+            
+            <div class="slideshow-container">
+                <div class="tasks">
+
+                    <section class="task">
+                        <h3><b>Задание 1.</b></h3>
+                        <span>Определи  верный  алгоритм нахождения разности 15 и 8.</span>
+                        <div class="answers">
+
+                            <div class="answers-line">
+                                <div class="checkbox">
+                                    <input type="radio" class="checkbox__input" name="in1" id="t1-o1"></input>
+                                    <label for="t1-o1" class="checkbox__label">15 – 7 – 1</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="radio" class="checkbox__input" name="in1" id="t1-oG"></input>
+                                    <label for="t1-oG" class="checkbox__label">15 – 6 – 2</label>
+                                </div>
+                            </div>
+                            <div class="answers-line">
+                                <div class="checkbox">
+                                    <input type="radio" class="checkbox__input" name="in1" id="t1-o3"></input>
+                                    <label for="t1-o3" class="checkbox__label">15 – 5 – 3</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="radio" class="checkbox__input" name="in1" id="t1-o4"></input>
+                                    <label for="t1-o4" class="checkbox__label">15 – 4 – 4</label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                    <section class="task">
+                        <h3><b>Задание 2.</b></h3>
+                        <span>Вычисли:  9 см + 8 см =</span>
+                        <div class="answers">
+                            <div class="answers-line">
+                                <img src="./img/1-1.png">
+                                <div class="field">
+                                    <input type="number" class="field__input" name="in2" id="t2-o1">1 дм 9 см</input>
+                                </div>
+                            </div>
+                            <div class="answers-line">
+                                <img src="./img/1-2.png">
+                                <div class="field">
+                                    <input type="number" class="field__input" name="in2" id="t2-o2"></input>
+                                </div>
+                            </div>
+                            <div class="answers-line">
+                                <img src="./img/1-3.png">
+                                <div class="field">
+                                    <input type="number" class="field__input" name="in2" id="t2-o3"></input>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="task" id="task_1_3">
+                        <h3><b>Задание 3</b></h3>
+                        <span>Соедини число и его графическую модель</span>
+                        <div class="answers">
+                            <div class="answers-line">
+                                <div class="pair">
+                                    <input type="number" class="field__input" name="in3" id="t3-i1" value="32" readonly></input>
+                                </div>
+                                
+                                <div class="pair__to" id="t3-d1">
+                                    <img src="./img/1-2-4.png">
+                                </div>
+                                
+                            </div>
+                            <div class="answers-line">
+                                <div class="pair">
+                                    <input type="number" class="field__input" name="in3" id="t3-i2" value="54" readonly></input>
+                                </div>
+                                <div class="pair__to" id="t3-d2">
+                                    <img src="./img/1-2-5.png">
+                                </div>
+                                
+                            </div>
+                            <div class="answers-line">
+                                <div class="pair">
+                                    <input type="number" class="field__input" name="in3" id="t3-i3" value="43" readonly></input>
+                                </div>
+                                <div class="pair__to" id="t3-d3">
+                                    <img src="./img/1-2-6.png">
+                                </div>
+                                
+                            </div>
+                            <svg class="pair__svg" width="134" height="195"><line x1="4" y1="-10" x2="1" y2="-10"/><line x1="4" y1="-10" x2="1" y2="-10"/><line x1="4" y1="-10" x2="1" y2="-10"/></svg>
+                        </div>
+                    </section>
+                    <section class="task" id="task_1_4">
+                        <h3><b>Задание 4</b></h3>
+                        <span>Выпиши наибольшее из чисел. Запиши разрядный состав этого числа</span>
+                        <b>27 35 51 31 47 53 15 37</b>
+                        <div class="answers">
+                            <div class="answers-line">
+                                <div class="check_fields">
+                                    <input type="number" class="field__input" name="in4" id="t4-o1"></input>
+                                    <span>=</span>
+                                    <input type="number" class="field__input" name="in4" id="t4-o2"></input>
+                                    <span>+</span>
+                                    <input type="number" class="field__input" name="in4" id="t4-o3"></input>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="task" id="task-5">
+                        <h3><b>Задание 5</b></h3>
+                        <span>Сравни: </span>
+                        <div class="answers">
+                            <div class="answers-line">
+                                <div class="select_field">
+                                    <span>4 дес. 5 ед.</span>
+                                    <select class="field__select" name="in5" id="t5-o1">
+                                        <option selected disabled></option>
+                                        <option value=">">></option>
+                                        <option value="<"><</option>
+                                        <option value="=">=</option>
+                                    </select>
+                                    <span>5 дес. 5 ед.</span>
+                                </div>
+                            </div>
+                            <div class="answers-line">
+                                <div class="select_field">
+                                    <span>49</span>
+                                    <select class="field__select" name="in5" id="t5-o2">
+                                        <option selected disabled></option>
+                                        <option value=">">></option>
+                                        <option value="<"><</option>
+                                        <option value="=">=</option>
+                                    </select>
+                                    <span>48</span>
+                                </div>
+                                
+                            </div>
+                            <div class="answers-line">
+                                <div class="select_field">
+                                    <span>48</span>
+                                    <select class="field__select" name="in5" id="t5-o3">
+                                        <option selected disabled></option>
+                                        <option value=">">></option>
+                                        <option value="<"><</option>
+                                        <option value="=">=</option>
+                                    </select>
+                                    <span>38</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+                <div id="error_message"></div>
+                <a id="prev" onclick="plusSlides(-1)"></a>
+                <a id="next" onclick="plusSlides(1)"></a>
+                <div class="button" id="check">Проверить</div>
+                <div id="dots"></div>
+            </div>
+        </section>
+        <section>
+            <div id="result" style="display: none;">
+                <img class="confetti" src="../../assert/confetti.png" alt="">
+                <div class="container">
+                    <img class="compass_boy" src="../../assert/images/compass_boy_11.png" alt="">
+                    <img class="result_img" src="../../assert/images/result.png" alt="">    
+                    <div class="title">
+                        <img src="../../assert/cup.png" >
+                        <h2>Твой результат:</h2>
+                    </div>
+
+                    <div id="graphic_result">
+
+                    </div>
+                    <div id="correct_answers">Количество правильных ответов: <span></span></div>
+                    <div id="error_answers">Ошибок: <span></span></div>
+                    <div id="spent_time">Потраченное время: <span></span></div>
+                    <a href="./part1.html" onclick="timer=0" class="button">Начать заново</a>
+                </div>
+            </div>
+        </section>
         
+        
+    </main>
+    <footer></footer>
+    <script src="../../js/js/script.js"></script>
+    <script src="../../js/js/script1.js"></script>
+</body>
 
-        <!-- Other Scripts -->
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="js/script2.js" type="text/javascript"></script>
-        <script src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
-		<script src="js/1.js" type="text/javascript"></script>
-    </body>
-    <!-- END BODY -->
+<!-- END BODY -->
 </html>
