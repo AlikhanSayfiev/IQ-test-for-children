@@ -48,7 +48,7 @@ var tasks = [
     {
         type: "option_choice",
         self_answer: undefined,
-        answer_id: "t1-oG",
+        answer_id: "t5-oG",
         input_name: "in1"
 
     },
