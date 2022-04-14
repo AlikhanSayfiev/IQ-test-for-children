@@ -482,9 +482,9 @@ input.field__input.aright {
 }
 
 .pair {
-    width: 2rem;
+    width: 100%;
     height: inherit;
-    margin-right: 20%;
+    margin-right: 30%;
     margin-bottom: 0;
 }
 

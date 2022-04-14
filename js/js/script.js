@@ -1,9 +1,4 @@
-
 var error_message = [
-    {
-        type: "select_fields",
-        message: "Выберите все элементы"
-    },
     {
         type: "option_choice",
         message: "Выберите вариант"
@@ -20,6 +15,10 @@ var error_message = [
         type: "check_fields",
         message: "Заполните все поля"
     },
+    {
+        type: "select_fields",
+        message: "Выберите все элементы"
+    }
 ]
 
 var slideIndex = 1
