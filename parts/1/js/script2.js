@@ -27,6 +27,25 @@ var tasks = [
 
     },
     {
+        type: "select_fields",
+        input_name: "in5",
+        fields: [
+            {
+                value: undefined,
+                select: [">", "<"],
+                answer: "<",
+                answer_id: "t4-o1"
+            },
+            {
+                value: undefined,
+                select: [">", "<"],
+                answer: "<",
+                answer_id: "t4-o2"
+            },
+        ]
+
+    },
+    {
         type: "fill_fields",
         input_name: "in2",
         fields: [
@@ -124,6 +143,8 @@ var error_message = [
         message: "Заполните все поля"
     },
 ]
+
+//global js_______________________________
 
 var slideIndex = 1
 var timer = 0
