@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+    <!-- BEGIN HEAD -->
+    <head>
+        <meta charset="utf-8"/>
+        <title>Раздел 3 C</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=1280, initial-scale=0, maximum-scale=5.0, user-scalable=1" />
+
+        <meta content="" name="description"/>
+        <meta content="" name="author"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- GLOBAL MANDATORY STYLES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+
+        <!-- PAGE LEVEL PLUGIN STYLES -->
+
+
+        <!-- THEME STYLES -->
+        <link href="css/style3.css" rel="stylesheet" type="text/css"/>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="favicon.ico"/>
+    </head>
+    <!-- END HEAD -->
+
+    <!-- BODY -->
+    <body>
+
+        <div class="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl"></div>
+                    <div class="col-xl-6">
+                        <ul type="none" class="task-manager">
+                            <!-- Task 1 -->
+                            <li class="task-1 pt-5"> 
+                                <div class="body-test">
+                                    <div class="body-test-head pb-3">
+                                        <div class="body-test-head-task">
+                                            Задание 1. 
+                                        </div>
+                                        <div class="body-test-head-condition">
+                                            Составь множества С и D, если известно, что:<br>
+                                            элементы множества С – однозначные числа;<br>
+                                            элементы множества  D – двузначные числа;<br>  
+                                            множество N – объединение множеств С и D.<br>
+                                            Множество N {7  17  3  32  5  8  2  19  10  9  75}
+                                        </div>
+                                    </div>
+                                    <div class="body-test-body">
+                                        <div class="d-grid drag-1">
+                                            <div class="row">
+                                                <div class="col-xl-4"><button type="button" class="btn optionbutton btn-block t1-o1" disabled style="height:60px">Множество 1</button></div>
+                                                <div class="col-xl-8 t1-o3"></div>                                            
+                                            </div>
+                                            <div class="col"></div>
+                                            <div class="row">
+                                                <div class="col-xl-4"><button type="button" class="btn optionbutton btn-block t1-o2" disabled style="height:60px">Множество 2</button></div>
+                                                <div class="col-xl-8 t1-o4"></div>                                            
+                                            </div>     
+                                            <div class="col"></div>
+                                            <div class="row">
+                                                <div class="col-number btn optionbutton btn-block t1-o5" id="t1-o5">7</div>
+                                                <div class="col-number btn optionbutton btn-block t1-o6" id="t1-o6">17</div>
+                                                <div class="col-number btn optionbutton btn-block t1-o7" id="t1-o7">3</div>
+                                                <div class="col-number btn optionbutton btn-block t1-o8" id="t1-o8">32</div>
+                                                <div class="col-number btn optionbutton btn-block t1-o9" id="t1-o9">5</div>
+                                                <div class="col-number btn optionbutton btn-block t1-o10" id="t1-o10">8</div>
+                                                <div class="col-number btn optionbutton btn-block t1-o11" id="t1-o11">2</div>
+                                                <div class="col-number btn optionbutton btn-block t1-o12" id="t1-o12">19</div>
+                                                <div class="col-number btn optionbutton btn-block t1-o13" id="t1-o13">10</div>
+                                                <div class="col-number btn optionbutton btn-block t1-o14" id="t1-o14">9</div>
+                                                <div class="col-number btn optionbutton btn-block t1-o15" id="t1-o15">75</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="bottom-buttons row pt-4">
+                                        <!--<button type="button" class="btn btn-block col back-button back-button1"><a  href="../../index.html">Назад</a></button>-->
+                                        <div class="col"></div>
+                                        <button type="button"  class="btn btn-block col check-button check-button1">Проверить</button>
+                                        <div class="col"></div>
+                                        <button type="button"  class="btn btn-block col next-button next-button1">Вперед</button>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Task 2 -->
+                            <li  class="task-2 pt-5" style="display:none">
+                                <div class="body-test">
+                                    <div class="body-test-head">
+                                        <div class="body-test-head-task">
+                                            Задание 2. 
+                                        </div>
+                                        <div class="body-test-head-condition">
+                                            Даны множества А, С, N.<br>
+                                            А ∈{Н,А,Д,И,Я}<br>
+                                            С ∈ {Д,А,М,И,Р}<br>
+                                            N ∈{ Р,И,Н,А,Т}
+                                        </div>
+                                    </div>
+                                    <div class="input-group row">
+                                        <img src="img/krug.png" alt="krugi">
+                                    </div>
+                                    <div class="d-grid drag-2">
+                                        <div class="row">
+                                            <table class="table table-bordered" style="width:100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="2">Определи элементы, которые  являются пересечением множеств</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>А и С</td>
+                                                        <td class="t2-o30">
+                                                            <div class="col-letter btn optionbutton btn-block t2-o1" id="t2-o1">Н</div>
+                                                            <div class="col-letter btn optionbutton btn-block t2-o2" id="t2-o2">А</div>
+                                                            <div class="col-letter btn optionbutton btn-block t2-o3" id="t2-o3">Д</div>
+                                                            <div class="col-letter btn optionbutton btn-block t2-o4" id="t2-o4">И</div>
+                                                            <div class="col-letter btn optionbutton btn-block t2-o5" id="t2-o5">Я</div>
+                                                            <div class="col-letter btn optionbutton btn-block t2-o6" id="t2-o6">М</div>
+                                                            <div class="col-letter btn optionbutton btn-block t2-o7" id="t2-o7">Р</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>С и N</td>
+                                                        <td class="t2-o31">
+                                                            <div class="col-letter btn optionbutton btn-block t2-o8" id="t2-o8">Д</div>
+                                                            <div class="col-letter btn optionbutton btn-block t2-o9" id="t2-o9">А</div>
+                                                            <div class="col-letter btn optionbutton btn-block t2-o10" id="t2-o10">М</div>
+                                                            <div class="col-letter btn optionbutton btn-block t2-o11" id="t2-o11">И</div>
+                                                            <div class="col-letter btn optionbutton btn-block t2-o12" id="t2-o12">Р</div>
+                                                            <div class="col-letter btn optionbutton btn-block t2-o13" id="t2-o13">Н</div>
+                                                            <div class="col-letter btn optionbutton btn-block t2-o14" id="t2-o14">Т</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>А и N</td>
+                                                        <td class="t2-o32">
+                                                            <div class="col-letter btn optionbutton btn-block t2-o15" id="t2-o15">Н</div>
+                                                            <div class="col-letter btn optionbutton btn-block t2-o16" id="t2-o16">А</div>
+                                                            <div class="col-letter btn optionbutton btn-block t2-o17" id="t2-o17">Д</div>
+                                                            <div class="col-letter btn optionbutton btn-block t2-o18" id="t2-o18">И</div>
+                                                            <div class="col-letter btn optionbutton btn-block t2-o19" id="t2-o19">Я</div>
+                                                            <div class="col-letter btn optionbutton btn-block t2-o20" id="t2-o20">Р</div>
+                                                            <div class="col-letter btn optionbutton btn-block t2-o21" id="t2-o21">Т</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>А, С, N</td>
+                                                        <td class="t2-o33">
+                                                            <div class="col-letter btn optionbutton btn-block t2-22" id="t2-o22">Н</div>
+                                                            <div class="col-letter btn optionbutton btn-block t2-o23" id="t2-o23">А</div>
+                                                            <div class="col-letter btn optionbutton btn-block t2-o24" id="t2-o24">Д</div>
+                                                            <div class="col-letter btn optionbutton btn-block t2-o25" id="t2-o25">И</div>
+                                                            <div class="col-letter btn optionbutton btn-block t2-o26" id="t2-o26">Я</div>
+                                                            <div class="col-letter btn optionbutton btn-block t2-o27" id="t2-o27">М</div>
+                                                            <div class="col-letter btn optionbutton btn-block t2-o28" id="t2-o28">Р</div>
+                                                            <div class="col-letter btn optionbutton btn-block t2-o29" id="t2-o29">Т</div>
+                                                        </td>
+                                                    </tr>
+                                            </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-buttons row pt-4">
+                                        <button type="button" class="btn btn-block col back-button back-button2">Назад</button>
+                                        <div class="col"></div>
+                                        <button type="button"  class="btn btn-block col check-button check-button2">Проверить</button>
+                                        <div class="col"></div>
+                                        <button type="button"  class="btn btn-block col next-button next-button2">Вперед</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Task 3 -->
+                            <li style="display: none;" class="task-3 pt-5"> 
+                                <div class="body-test">
+                                    <div class="body-test-head pb-3">
+                                        <div class="body-test-head-task">
+                                            Задание 3. 
+                                        </div>
+                                        <div class="body-test-head-condition">
+                                            Определи, истинно или ложно математическое высказывания высказывание. Соотнеси.<br>
+                                            Соотнеси.
+                                        </div>
+                                    </div>
+                                    <div class="body-test-body row">
+                                        <div class="d-grid gap-3 col" style="width:60%;flex:none;display:inline-block;font-size:16px">
+                                            <button type="button" class="btn optionbutton btn-block t3-o1">
+                                                Если уменьшаемое равно вычитаемому, то значение разности равно нулю.
+                                            </button>
+                                            <button type="button" class="btn optionbutton btn-block t3-o2">Число 32 на 1 больше, чем число 33.</button>
+                                            <button type="button" class="btn optionbutton btn-block t3-o3">
+                                                Первое слагаемое 27, второе слагаемое 23. Сумма равна 4.
+                                            </button>
+                                            <button type="button" class="btn optionbutton btn-block t3-o4">
+                                                Двузначные числа имеют два разряда  – десятки и единицы.
+                                            </button>
+                                        </div>
+                                        <div class="d-grid gap-3 col-xl-1" style="margin:0px -1px 0px -11px;padding:0px;position:relative">
+                                            <img src="img/img-p3-1-1.png" alt="1" class="arrow-img arrow-img-1-1">
+                                            <img src="img/img-p3-1-2.png" alt="1" class="arrow-img arrow-img-1-2">
+                                            <img src="img/img-p3-2-1.png" alt="1" class="arrow-img arrow-img-2-1">
+                                            <img src="img/img-p3-2-2.png" alt="1" class="arrow-img arrow-img-2-2">
+                                            <img src="img/img-p3-3-1.png" alt="1" class="arrow-img arrow-img-3-1">
+                                            <img src="img/img-p3-3-2.png" alt="1" class="arrow-img arrow-img-3-2">
+                                            <img src="img/img-p3-4-1.png" alt="1" class="arrow-img arrow-img-4-1">
+                                            <img src="img/img-p3-4-2.png" alt="1" class="arrow-img arrow-img-4-2">
+                                        </div>
+                                        <div class="d-grid gap-3 col"  style="width:30%;flex:none;display:inline-block;paddign:0px;text-align:center">
+                                            <button type="button" class="btn optionbutton btn-block t3-o5 col-xs-10">Истинное высказывание</button>
+                                            <button type="button" class="btn optionbutton btn-block t3-o6 col-xs-10">Ложное высказывание</button>                                            
+                                        </div>
+                                    </div>
+
+                                    <div class="bottom-buttons row pt-4">
+                                        <button type="button" class="btn btn-block col back-button back-button3">Назад</button>
+                                        <div class="col"></div>
+                                        <button type="button"  class="btn btn-block col check-button check-button3">Проверить</button>
+                                        <div class="col"></div>
+                                        <button type="button"  class="btn btn-block col next-button next-button3">Вперед</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Task 4 -->
+                            <li style="display: none;" class="task-4 pt-5"> 
+                                <div class="body-test">
+                                    <div class="body-test-head pb-3">
+                                        <div class="body-test-head-task">
+                                            Задание 4. 
+                                        </div>
+                                        <div class="body-test-head-condition">
+                                            Фермеры собрали урожай овощей.<br>
+                                            Рассмотри диаграмму и отметь истинные высказывания (три варианта ответа):<br>
+                                        </div>
+                                    </div>
+                                    <div class="body-test-body">
+                                        <img src="img/diag.png" alt="diagrama"><br>
+                                        А) Баклажанов  и свёклы собрали равное по массе количество.<br>
+                                        В) Больше  всего фермеры  собрали помидоров.<br>
+                                        С) Меньше всего собрали моркови.<br>
+                                        D) Масса урожая огурцов больше массы урожая моркови.
+                                        <div class="input-group mb-3 input-group-lg col-xl-1">
+                                            <span class="input-group-text">Выбери ответ:</span>                                  
+                                            <button type="button" class="btn optionbutton btn-block t4-oG">ABD</button>
+											<button type="button" class="btn optionbutton btn-block t4-o1">ACD</button>
+											<button type="button" class="btn optionbutton btn-block t4-o3">BDC</button>
+											<button type="button" class="btn optionbutton btn-block t4-o3">Нет правильного ответа</button>
+                                        </div>
+                                    </div>
+                                    <div class="bottom-buttons row pt-4">
+                                        <button type="button" class="btn btn-block col back-button back-button4">Назад</button>
+                                        <div class="col"></div>
+                                        <button type="button"  class="btn btn-block col check-button check-button4">Проверить</button>
+                                        <div class="col"></div>
+                                        <button type="button"  class="btn btn-block col next-button next-button4">Вперед</button>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Task 5 -->
+                            <li style="display: none;" class="task-5 pt-5"> 
+                                <div class="body-test">
+                                    <div class="body-test-head pb-3">
+                                        <div class="body-test-head-task">
+                                            Задание 5.
+                                        </div>
+                                        <div class="body-test-head-condition">
+                                            На диаграмме показана масса урожая фруктов в центнерах.<br>
+                                            Прочитай  диаграмму, ответь на вопросы. Ответ запиши числом.
+                                        </div>
+                                    </div>
+                                    <div class="body-test-body">
+                                        <img src="img/dag.png" alt="dags">
+                                        <div class="input-group mb-3 input-group-lg col-xl-1">
+                                            <span class="input-group-text">А) Масса яблок</span>                                  
+                                            <input type="text" id="t5-o1" class="form-control" style = "width: 60px">
+                                        </div>
+                                        <div class="input-group mb-3 input-group-lg col-xl-1">
+                                            <span class="input-group-text">Б) Масса груш больше массы сливы на</span>                                  
+                                            <input type="text" id="t5-o2" class="form-control" style = "width: 60px">
+                                        </div>
+                                        <div class="input-group mb-3 input-group-lg col-xl-1">
+                                            <span class="input-group-text">В) Сливы и персиков всего собрали</span>                                  
+                                            <input type="text" id="t5-o3" class="form-control" style = "width: 60px">
+                                        </div>
+                                        <div class="input-group mb-3 input-group-lg col-xl-1">
+                                            <span class="input-group-text">Г) Масса всего урожая фруктов</span>                                  
+                                            <input type="text" id="t5-o4" class="form-control" style = "width: 60px">
+                                        </div>
+                                    </div>
+                                    <div class="bottom-buttons row pt-4">
+                                        <button type="button" class="btn btn-block col back-button5 back-button5">Назад</button>
+                                        <div class="col"></div>
+                                        <button type="button"  class="btn btn-block col check-button check-button5">Проверить</button>
+                                        <div class="col"></div>
+                                        <button type="button"  class="btn btn-block col next-button next-button5">Вперед</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li style="display: none;" class="task-6 pt-5"> 
+                                <div class="body-test">
+                                    <div class="body-test-head pb-3">
+                                        <div class="body-test-head-task p-5">
+                                            Ваш результат за раздел
+                                        </div>
+                                        <div class="body-test-head-condition">
+
+                                        </div>
+                                    </div>
+                                    <div class="body-test-body">
+                                        <div class="successed">Количество правильных:<span class="plusScore success"></span></div>
+                                        <div class="unsuccessed">Что бы лучше себя проверить используй кнопку "Проверить"</div>
+                                    </div>
+                                    <div class="bottom-buttons row pt-4">
+                                       <!-- <button type="button" class="btn btn-block col back-button back-button6">Назад</button>-->
+                                        <div class="col"></div>
+                                        <a  href="part3.html" class="btn btn-block col check-button check-button6">Начать тест заново</a>
+                                        <div class="col"></div>
+                                       <!-- <a  href="../../index.html"  class="btn btn-block col next-button next-button6">Вперед</a>-->
+
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xl"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Other Scripts -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/script3.js" type="text/javascript"></script>
+        <script src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
+		<script src="js/1.js" type="text/javascript"></script>
+
+    </body>
+    <!-- END BODY -->
+</html>

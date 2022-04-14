@@ -1,0 +1,48 @@
+
+[id^="part-1"]{
+    position: absolute;
+    width: 10vw;
+    display: none;
+}
+#part-1-1 {
+    right: -4vw;
+    transform: translateY(-69%);
+}
+#part-1-2 {
+    right: 2rem;
+    transform: translateY(-92%);
+}
+#part-1-3 {
+    right: 0;
+    width: 16vw;
+    transform: scaleX(-1) translate(-57%, -43%);
+}
+#part-1-4 {
+    right: 0;
+    width: 13vw;
+    transform: translate(-36%, -90%);
+}
+
+#part-1-5 {
+    right: 0;
+    width: 11vw;
+    transform: translate(-42%, -94%);
+}
+
+
+@media (max-width: 768px) {
+    #task_1_3 .answers-line {
+        flex-direction: row;
+        height: 2rem;
+    }
+    #task_1_3 .answers-line img {
+        width: 100%;
+    }
+    #task_1_3 .answers-line>*+* {
+        margin: 0;
+    }
+    #task-5 .check_fields {
+        font-size: 0.7rem;
+    }
+     
+}

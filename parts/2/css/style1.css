@@ -1,0 +1,82 @@
+.main{
+	font-size: 20px;
+	font-family: 'Ubuntu', sans-serif;
+	color: #3d4651;
+}
+span{
+	font-size: 16px;
+	color: gray;
+}
+ol, ul {
+    padding-left: 0rem;
+}
+.body-test-head{
+	border-width: 2px;
+	border-color: blueviolet;
+	
+}
+.optionbutton{
+	text-align: left;
+	border: thin solid #e0e5ea;
+}
+.back-button{
+	border: thin solid #a0b5c2;
+	color: #a0bcd4;
+}
+.check-button{	
+	background-color: #cccccc;
+	color:  #faffff;
+}
+.next-button{
+	background-color: #4fc168;
+	color:  #faffff;
+}
+
+.correct-answer{
+	border: thin solid #4fc168;
+	color: #4fc168;
+}
+.correct-answer2{
+	border: thin solid #5de67b;
+	color: #5de67b;
+}
+.correct-answer3{
+	border: thin solid #41a256;
+	color: #41a256;
+}
+.correct-answer4{
+	border: thin solid #046c1a;
+	color: #046c1a;
+}
+.correct-answer5{
+	border: thin solid #386c43;
+	color: #386c43;
+}
+.wrong-answer{
+	border: thin solid #f85621;
+	color: #f85621;
+}
+.plusScore{ 
+	font-size: 24px; 
+	color: #26cf0a; 
+}
+.minusScore{  
+	font-size: 24px; 
+	color: #cf0a0a; 
+}
+a{
+	text-decoration:none ;
+}
+.error-message{font-size:14px;color:red;margin:10px 0px 0px 0px}
+a.next-button6{padding-top:28px}
+a.next-button6:hover{color:#fff}
+a.check-button6,a.check-button6:hover{color:#0d6efd}
+.table{table-layout:fixed;width:315px}
+.table tr:last-child{border-top:3px solid #000}
+.table td{text-align:center;width:10px;height:10px;border:1px solid #000;padding:3px}
+.lightblue-answer{
+	border: medium solid #a9e7ff;
+	color: #a9e7ff;
+}
+a.check-button6,a.check-button6:hover{color:#0d6efd}
+.arrow-img{display:none;position:absolute;top:0px;left:0px}

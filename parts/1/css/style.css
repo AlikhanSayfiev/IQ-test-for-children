@@ -1,0 +1,99 @@
+.main{
+	font-size: 20px;
+	font-family: 'Ubuntu', sans-serif;
+	color: #3d4651;
+	min-width: 420px;
+}
+span{
+	font-size: 16px;
+	color: gray;
+}
+ol, ul {
+    padding-left: 0rem;
+}
+.body-test-head{
+	border-width: 2px;
+	border-color: blueviolet;
+	
+}
+.optionbutton{
+	text-align: left;
+	border: thin solid #e0e5ea;
+}
+optionbutton:hover {
+    background: #786b59; /* Цвет фона под ссылкой */ 
+    color: #ffe; /* Цвет ссылки */ 
+   } 
+.back-button{
+	border: thin solid #a0b5c2;
+	color: #a0bcd4;
+}
+.check-button{	
+	background-color: #cccccc;
+	color:  #faffff;
+}
+.next-button{
+	background-color: #4fc168;
+	color:  #faffff;
+}
+
+
+.correct-answer2{
+	border: thin solid #5de67b;
+	color: #5de67b;
+}
+.correct-answer3{
+	border: thin solid #41a256;
+	color: #41a256;
+}
+.correct-answer4{
+	border: thin solid #046c1a;
+	color: #046c1a;
+}
+.correct-answer5{
+	border: thin solid #386c43;
+	color: #386c43;
+}
+/*.blue-answer{
+	border: medium solid blue;
+	color: blue;
+}
+.red-answer{
+	border: medium solid red;
+	color: red;
+}
+.yellow-answer{
+	border: medium solid yellow;
+	color: yellow;
+}*/
+.lightblue-answer{
+	border: medium solid #a9e7ff;
+	color: #a9e7ff;
+}
+.plusScore{ 
+	font-size: 24px; 
+	color: #26cf0a; 
+}
+.minusScore{  
+	font-size: 24px; 
+	color: #cf0a0a; 
+}
+a{
+	text-decoration:none ;
+}
+.error-message{font-size:14px;color:red;margin:10px 0px 0px 0px}
+a.next-button6{padding-top:28px}
+a.next-button6:hover{color:#fff}
+a.check-button6,a.check-button6:hover{color:#0d6efd}
+.arrow-img{display:none;position:absolute;top:0px;left:0px}
+.col-xs-3{float:left;width:33.33%}
+.col-xs-6{float:left;width:50%}
+div.t3-o2{border:1px solid #a0b5c2}
+.correct-answer{
+	border: thin solid #4fc168 !important;
+	color: #4fc168;
+}
+.wrong-answer{
+	border: thin solid #f85621 !important;
+	color: #f85621;
+}

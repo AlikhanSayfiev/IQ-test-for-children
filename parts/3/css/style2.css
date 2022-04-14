@@ -1,0 +1,65 @@
+.main{
+	font-size: 20px;
+	font-family: 'Ubuntu', sans-serif;
+	color: #3d4651;
+}
+span{
+	font-size: 16px;
+	color: gray;
+}
+ol, ul {
+    padding-left: 0rem;
+}
+.body-test-head{
+	border-width: 2px;
+	border-color: blueviolet;
+	
+}
+.optionbutton{
+	text-align: left;
+	border: thin solid #e0e5ea;
+}
+.back-button{
+	border: thin solid #a0b5c2;
+	color: #a0bcd4;
+}
+.check-button{	
+	background-color: #cccccc;
+	color:  #faffff;
+}
+.next-button{
+	background-color: #4fc168;
+	color:  #faffff;
+}
+
+.correct-answer{
+	border: thin solid #4fc168;
+	color: #4fc168;
+}
+.wrong-answer{
+	border: thin solid #f85621;
+	color: #f85621;
+}
+.blue-answer{
+  border: thin solid blue;
+  color: blue;
+}
+.plusScore{
+  font-size: 24px;
+  color: #26cf0a;
+}
+.minusScore{
+  font-size: 24px;
+  color: #cf0a0a;
+}
+a{
+  text-decoration:none ;
+}
+.error-message{font-size:14px;color:red;margin:10px 0px 0px 0px}
+a.next-button6{padding-top:28px}
+a.next-button6:hover{color:#fff}
+.lightblue-answer{
+	border: medium solid #a9e7ff;
+	color: #a9e7ff;
+}
+a.check-button6,a.check-button6:hover{color:#0d6efd}

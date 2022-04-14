@@ -1,0 +1,69 @@
+.main{
+	font-size: 20px;
+	font-family: 'Ubuntu', sans-serif;
+	color: #3d4651;
+}
+span{
+	font-size: 16px;
+	color: gray;
+}
+ol, ul {
+    padding-left: 0rem;
+}
+.body-test-head{
+	border-width: 2px;
+	border-color: blueviolet;
+	
+}
+.optionbutton{
+	text-align: left;
+	border: thin solid #e0e5ea;
+}
+.back-button{
+	border: thin solid #a0b5c2;
+	color: #a0bcd4;
+}
+.check-button{	
+	background-color: #cccccc;
+	color:  #faffff;
+}
+.next-button{
+	background-color: #4fc168;
+	color:  #faffff;
+}
+a.next-button{
+	background-color: #4fc168;
+	text-decoration: underline;
+        color:#f5f7f7;
+}
+a.next-button:hover{
+        color:#0d6efd;
+}
+.correct-answer{
+	border: thin solid #4fc168;
+	color: #4fc168;
+}
+.wrong-answer{
+	border: thin solid #f85621;
+	color: #f85621;
+}
+.correct-answer2{
+	border: thin solid #5de67b;
+	color: #5de67b;
+}
+.correct-answer3{
+	border: thin solid #41a256;
+	color: #41a256;
+}
+.correct-answer4{
+	border: thin solid #046c1a;
+	color: #046c1a;
+}
+.correct-answer5{
+	border: thin solid #386c43;
+	color: #386c43;
+}
+.body-test{
+	border: 3px solid #47a5d1;
+	border-radius: 20px;
+}
