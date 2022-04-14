@@ -69,9 +69,9 @@ header {
 
 }
 header.main_start {
-    background-image: url("../assert/background_number.png"), -webkit-gradient(linear, left top, left bottom, from(#f0e4ef), to(#fdf1fc));
-    background-image: url("../assert/background_number.png"), -o-linear-gradient(#f0e4ef, #fdf1fc);
-    background-image: url("../assert/background_number.png"), linear-gradient(#f0e4ef, #fdf1fc);
+    background-image: url("../../background_number.png"), -webkit-gradient(linear, left top, left bottom, from(#f0e4ef), to(#fdf1fc));
+    background-image: url("../../assert/background_number.png"), -o-linear-gradient(#f0e4ef, #fdf1fc);
+    background-image: url("../../assert/background_number.png"), linear-gradient(#f0e4ef, #fdf1fc);
     background-position: 100% 0, 100% 100%;
     background-size: 50% auto, 100% 100%;
 }
@@ -190,12 +190,12 @@ main {
 }
 
 .start_test .container::before {
-    background-image: url("../assert/images/triangle_3.png");
+    background-image: url("../../assert/images/triangle_3.png");
     left: -10vw;
 }
 
 .start_test .container::after {
-    background-image: url("../assert/images/eraser_3.png");
+    background-image: url("../../assert/images/eraser_3.png");
     -webkit-transform: scaleX(-1);
     -ms-transform: scaleX(-1);
     transform: scaleX(-1);
@@ -387,7 +387,7 @@ footer::after {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-image: url("../assert/arrow.png");
+    background-image: url("../../assert/arrow.png");
     background-size: contain;
     display: -webkit-box;
     display: -ms-flexbox;

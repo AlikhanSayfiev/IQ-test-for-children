@@ -97,3 +97,23 @@ div.t3-o2{border:1px solid #a0b5c2}
 	border: thin solid #f85621 !important;
 	color: #f85621;
 }
+
+.btnImg {
+	cursor: pointer;
+    position: absolute;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-image: url(../../../assert/arrow.png);
+    background-size: contain;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    bottom: 10%;
+    width: 2rem;
+    height: 2rem;
+    margin-top: -22px;
+}
