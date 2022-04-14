@@ -488,6 +488,13 @@ input.field__input.aright {
     margin-bottom: 0;
 }
 
+.pair__width {
+	width: 6.5em !important;
+    height: inherit;
+    margin-right: 20% !important;
+    margin-bottom: 0;
+}
+
 .pair .field__input {
     text-align: center;
     padding-left: initial;
@@ -548,6 +555,10 @@ input.field__input.aright {
     margin: initial;
     stroke-width: 3px;
     stroke: green;
+}
+
+.pair__svg__width {
+    left: 5.2rem;
 }
 
 .check_fields {

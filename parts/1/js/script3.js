@@ -353,7 +353,7 @@ function pair(task_id) {
     document.getElementById(task_id).querySelector(".answers").addEventListener("click", function (event) {
         const task = tasks[slideIndex - 1]
         event.preventDefault()
-        if (event.target.localName == "input") {
+        if (event.target.localName == "img") {
             for (var i = 0; i < task.fields.length; i++) {
                 if (task.fields[i].pair_id == event.target.id) {
                     task.active_elem = event.target.id
@@ -361,9 +361,12 @@ function pair(task_id) {
             }
         }
 
+        
+
         else {
-            if (event.target.localName == "img") {
-                
+            // const checking = document.getElementById("#checking")
+            if (event.target.localName == "inputs") {
+                console.log(event.target.localName == "inputs")
                 for (var i = 0; i < task.fields.length; i++) {
                     
                    
