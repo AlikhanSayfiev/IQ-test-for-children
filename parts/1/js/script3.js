@@ -1,13 +1,13 @@
 var tasks = [
     {
         type: "select_fields",
-        input_name: "in5",
+        input_name: "in51",
         fields: [
             {
                 value: undefined,
                 select: ["Канат и Сауле", "Сауле и Марьям", "Канат и Марьям"],
                 answer: "Канат и Марьям",
-                answer_id: "t5-o1"
+                answer_id: "t1-o1"
             }
         ]
     },
@@ -34,73 +34,55 @@ var tasks = [
         ]
     },
     {
+        type: "option_choice",
+        self_answer: undefined,
+        answer_id: "t3-oG",
+        input_name: "in1"
+
+    },
+    {
         type: "fill_fields",
-        input_name: "in2",
+        input_name: "in4",
         fields: [
             {
-                answer_id: "t2-o1",
+                answer_id: "t4-o1",
                 self_answer: undefined,
                 answer: "26"
             },
             {
-                answer_id: "t2-o2",
+                answer_id: "t4-o2",
                 self_answer: undefined,
-                answer: "42"
+                answer: "26"
             },
             {
-                answer_id: "t2-o3",
+                answer_id: "t4-o3",
+                self_answer: undefined,
+                answer: "50"
+            },
+            {
+                answer_id: "t4-o4",
                 self_answer: undefined,
                 answer: "50"
             }
         ]
     },
-
-    {
-        type: "option_choice",
-        self_answer: undefined,
-        answer_id: "t1-oG",
-        input_name: "in1"
-
-    },
-
     {
         type: "select_fields",
         input_name: "in5",
         fields: [
             {
                 value: undefined,
-                select: ["Канат и Сауле", "Сауле и Марьям", "Канат и Марьям"],
-                answer: "Канат и Марьям",
+                select: ["45", "46", "44"],
+                answer: "44",
                 answer_id: "t5-o1"
-            }
-        ]
-    },
-    {
-        type: "check_fields",
-        input_name: "in4",
-        fields: [
-            {
-                value: undefined,
-                answer: ["53"],
-                answer_id: "t4-o1"
             },
-            {
-                value: undefined,
-                answer: ["50", "3"],
-                answer_id: "t4-o2"
-            },
-            {
-                value: undefined,
-                answer: ["50", "3"],
-                answer_id: "t4-o3"
-            }
-
         ]
 
-    },
+    }
 ]
+
 window.addEventListener('load', function () {
-    pair("task_1_3")
+    pair("task_3_2")
 });
 
 // ERROR MESSAGE 
@@ -135,6 +117,7 @@ window.addEventListener('load', function (event) {
     window.setInterval(function(){timer += 1}, 1000)
     maskotShow()
     const slider = document.getElementsByClassName("task")
+    console.log(slider)
     const dots = document.getElementById("dots")
     for (var i = 0; i < slider.length; i++) {
         const span = document.createElement("span")
@@ -353,7 +336,7 @@ function pair(task_id) {
     document.getElementById(task_id).querySelector(".answers").addEventListener("click", function (event) {
         const task = tasks[slideIndex - 1]
         event.preventDefault()
-        if (event.target.localName == "img") {
+        if (event.target.localName == "input") {
             for (var i = 0; i < task.fields.length; i++) {
                 if (task.fields[i].pair_id == event.target.id) {
                     task.active_elem = event.target.id
@@ -365,8 +348,8 @@ function pair(task_id) {
 
         else {
             // const checking = document.getElementById("#checking")
-            if (event.target.localName == "inputs") {
-                console.log(event.target.localName == "inputs")
+            if (event.target.localName == "must") {
+                console.log(event.target.localName == "must")
                 for (var i = 0; i < task.fields.length; i++) {
                     
                    

@@ -811,3 +811,119 @@ body.result {
     }
 
 }
+
+/*--------------------------------------------------------------------------*/
+
+/*all part filed selects*/
+.field__select {
+    width: auto!important;
+    padding: 0.1rem!important;
+    font-size: 1rem!important;
+}
+
+.task span {
+    font-size: .8rem;
+    color: black;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.task h3 {
+    box-sizing: border-box;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.tab_part span{
+    font-size: 0.8rem;
+    color: black;
+}
+
+.title{
+    text-align: center;
+}
+
+.title h1{
+    color: black;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.answers .answers-line .checkbox {
+    width: auto;
+}
+
+.answers .answers-line .checkbox label{
+    padding: .5rem;
+    font-size: .75rem;
+}
+
+.section1_part3_pair__to {
+    width: auto;
+}
+
+.section1_part3_pair__to must{
+    padding: .5rem;
+    /*font-size: .75rem;*/
+}
+
+.section1_part3_field_inputs .answers-line .check_fields{
+    display: inline-block;
+}
+/*SECTION 2------------------------------------------------------------------------------------------*/
+
+.section2_part1_check_fields input{
+    width: 3em!important;
+}
+
+.section2_part1_check_fields span{
+    padding-top: 1rem;
+}
+
+.section2_part5_pair span{
+    width: auto;
+}
+
+/*.section2_part5_pair .answers-line{
+    width: auto;
+    height: auto;
+}*/
+
+.section2_part5_pair .pair{
+    width: 28vw;
+    height: auto;
+    padding-top: .3rem;
+    padding-left: .3rem;
+}
+
+.section2_part5_pair .answers-line{
+    margin-bottom: 2rem;
+}
+
+.section2_part5_pair span{
+    font-size: .6rem;
+    display: inline-block;
+    text-align: left!important;
+    vertical-align: baseline!important;
+    height: 78px;
+}
+
+.section2_part5_pair must{
+    width: auto;
+    height: auto;
+    /*padding: 0!important;*/
+    padding-top: 0.4rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    text-align: center!important;
+    vertical-align: baseline!important;
+    border-radius: 15px;
+    background-color: white;
+    -webkit-box-shadow: 0 5px 0px #c6bab4;
+    box-shadow: 0 5px 0px #c6bab4;
+}
+
+.section2_par1_pair__svg{
+    left: 14rem;
+}

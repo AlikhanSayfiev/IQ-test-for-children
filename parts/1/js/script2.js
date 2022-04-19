@@ -107,6 +107,7 @@ window.addEventListener('load', function (event) {
     window.setInterval(function(){timer += 1}, 1000)
     maskotShow()
     const slider = document.getElementsByClassName("task")
+    console.log(slider)
     const dots = document.getElementById("dots")
     for (var i = 0; i < slider.length; i++) {
         const span = document.createElement("span")
